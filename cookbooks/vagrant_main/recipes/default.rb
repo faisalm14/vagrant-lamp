@@ -17,11 +17,11 @@ bash "debconf_for_phpmyadmin" do
 end
 package "phpmyadmin"
 
-s = "dev-site"
+s = "lcl"
 site = {
   :name => s, 
   :host => "www.#{s}.com", 
-  :aliases => ["#{s}.com", "dev.#{s}-static.com"]
+  :aliases => ["#{s}.com", "dev.#{s}-static.com", "#{s}"]
 }
 
 # Configure the development site
